@@ -9,7 +9,7 @@ function HomePage() {
         <p>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
       </div>
 
-      <div className="grow flex justify-center items-center">
+      <div className="grow flex justify-center items-center p-8">
         <CircularButton className="w-36 tablet:w-68 aspect-square">
           Explore
         </CircularButton>
