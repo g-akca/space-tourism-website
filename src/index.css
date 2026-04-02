@@ -5,8 +5,9 @@
   --color-blue-300: #D0D6F9;
 
   --font-barlow: "Barlow", sans-serif;
+  --font-barlow-cond: "Barlow Condensed", "Barlow", sans-serif;
   --font-bellefair: "Bellefair", Arial;
-  --text-base: 18px;
+  --text-base: 15px;
   --leading-base: 180%;
 
   --breakpoint-tablet: 768px;
