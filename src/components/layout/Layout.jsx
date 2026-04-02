@@ -5,7 +5,7 @@ function Layout({ children, bg }) {
     <div className={`min-h-screen ${bg} bg-cover text-base leading-base`}>
       <Header />
 
-      <main>
+      <main className="p-6">
         {children}
       </main>
     </div>
