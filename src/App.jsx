@@ -1,17 +1,20 @@
-import Header from "./components/layout/Header";
+import Layout from "./components/layout/Layout";
 import HomePage from "./pages/HomePage";
 
 import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="text-base leading-base">
-      <Header />
-
-      <Routes>
-        <Route path="/" element={ <HomePage /> } />
-      </Routes>
-    </div>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <Layout bg="bg-[url('assets/home/background-home-mobile.jpg')]">
+            <HomePage />
+          </Layout>
+        }
+      />
+    </Routes>
   )
 }
 
