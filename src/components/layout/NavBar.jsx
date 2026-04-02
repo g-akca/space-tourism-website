@@ -9,13 +9,14 @@ function NavBar() {
   return (
     <nav 
       className="
-        hidden tablet:flex justify-end gap-12 px-10 
+        hidden tablet:flex justify-end gap-12 px-10 desktop:px-16 desktop:max-w-184
         grow self-stretch bg-[rgba(255,255,255,0.05)] backdrop-blur-[80px] 
-        uppercase text-white font-barlow-cond tracking-[2px] leading-auto
+        uppercase text-white text-[16px] font-barlow-cond tracking-[2px] leading-auto
       "
     >
       <NavLink to="/" end className={navClass}>
-        Home
+        <strong className="tracking-[2.7px]">00</strong>
+        <p>Home</p>
       </NavLink>
 
       <NavLink to="/destination" end className={navClass}>
