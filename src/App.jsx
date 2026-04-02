@@ -9,7 +9,7 @@ function App() {
       <Route
         path="/"
         element={
-          <Layout bg="bg-[url('assets/home/background-home-mobile.jpg')] tablet:bg-[url('assets/home/background-home-tablet.jpg')]">
+          <Layout bg="bg-[url('assets/home/background-home-mobile.jpg')] tablet:bg-[url('assets/home/background-home-tablet.jpg')] desktop:bg-[url('assets/home/background-home-desktop.jpg')]">
             <HomePage />
           </Layout>
         }
