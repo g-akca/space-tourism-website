@@ -10,7 +10,7 @@ function Header() {
         <img src={logoImg} alt="Logo image" className="h-10" />
       </Link>
 
-      <button type="button">
+      <button type="button" className="cursor-pointer">
         <img src={hamburgerIcon} alt="Menu icon" />
       </button>
     </header>

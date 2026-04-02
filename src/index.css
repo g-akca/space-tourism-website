@@ -9,6 +9,7 @@
   --font-bellefair: "Bellefair", Arial;
   --text-base: 15px;
   --leading-base: 180%;
+  --leading-auto: 100%;
 
   --breakpoint-tablet: 768px;
   --breakpoint-desktop: 1440px;

@@ -1,6 +1,6 @@
 function CircularButton({ children, className }) {
   return (
-    <button className={`${className}`}>
+    <button className={`bg-white rounded-full cursor-pointer uppercase text-blue-900 font-bellefair text-[18px] leading-auto ${className}`}>
       {children}
     </button>
   )
