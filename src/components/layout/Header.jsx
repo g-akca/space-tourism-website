@@ -25,7 +25,7 @@ function Header() {
       <NavBar />
 
       {isMenuOpen && (
-        <Menu />
+        <Menu closeMenu={() => setIsMenuOpen(false)} />
       )}
     </header>
   )
