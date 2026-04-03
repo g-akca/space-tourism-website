@@ -1,11 +1,6 @@
-import { NavLink } from "react-router";
+import NavLinks from "../ui/NavLinks";
 
 function NavBar() {
-  const navClass = ({ isActive }) => 
-    `flex items-center gap-2 border-b-[3px] ${
-      isActive ? "border-white" : "border-transparent"
-    }`;
-
   return (
     <nav 
       className="
@@ -14,25 +9,7 @@ function NavBar() {
         uppercase text-white text-[16px] font-barlow-cond tracking-[2px] leading-auto
       "
     >
-      <NavLink to="/" end className={navClass}>
-        <strong className="tracking-[2.7px]">00</strong>
-        <p>Home</p>
-      </NavLink>
-
-      <NavLink to="/destination" end className={navClass}>
-        <strong className="tracking-[2.7px]">01</strong>
-        <p>Destination</p>
-      </NavLink>
-
-      <NavLink to="/crew" end className={navClass}>
-        <strong className="tracking-[2.7px]">02</strong>
-        <p>Crew</p>
-      </NavLink>
-
-      <NavLink to="/technology" end className={navClass}>
-        <strong className="tracking-[2.7px]">03</strong>
-        <p>Technology</p>
-      </NavLink>
+      <NavLinks />
     </nav>
   )
 }
