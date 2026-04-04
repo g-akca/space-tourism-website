@@ -23,7 +23,11 @@ function DestinationPage() {
                 key={item.name}
                 type="button"
                 onClick={() => setSelectedIndex(index)}
-                className={`flex items-start relative ${selectedIndex === index ? "text-white after:absolute after:w-full after:h-0.75 after:bg-white after:left-0 after:bottom-0" : ""}`}
+                className={`flex items-start border-b-[3px] transition-all cursor-pointer ${
+                  selectedIndex === index
+                    ? "text-white border-white"
+                    : "border-transparent hover:text-white hover:border-white/50"
+                }`}
               >
                 <p className="uppercase">{item.name}</p>
               </button>
