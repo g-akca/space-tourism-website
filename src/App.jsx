@@ -2,6 +2,7 @@ import Layout from "./components/layout/Layout";
 import HomePage from "./pages/HomePage";
 import DestinationPage from "./pages/DestinationPage";
 import CrewPage from "./pages/CrewPage";
+import TechnologyPage from "./pages/TechnologyPage";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -31,6 +32,15 @@ function App() {
         element={
           <Layout bg="bg-[url('assets/crew/background-crew-mobile.jpg')] tablet:bg-[url('assets/crew/background-crew-tablet.jpg')] desktop:bg-[url('assets/crew/background-crew-desktop.jpg')]">
             <CrewPage />
+          </Layout>
+        }
+      />
+
+      <Route
+        path="/technology"
+        element={
+          <Layout bg="bg-[url('assets/technology/background-technology-mobile.jpg')]">
+            <TechnologyPage />
           </Layout>
         }
       />
