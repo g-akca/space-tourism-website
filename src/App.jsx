@@ -1,6 +1,7 @@
 import Layout from "./components/layout/Layout";
 import HomePage from "./pages/HomePage";
 import DestinationPage from "./pages/DestinationPage";
+import CrewPage from "./pages/CrewPage";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -21,6 +22,15 @@ function App() {
         element={
           <Layout bg="bg-[url('assets/destination/background-destination-mobile.jpg')] tablet:bg-[url('assets/destination/background-destination-tablet.jpg')] desktop:bg-[url('assets/destination/background-destination-desktop.jpg')]">
             <DestinationPage />
+          </Layout>
+        }
+      />
+
+      <Route
+        path="/crew"
+        element={
+          <Layout bg="bg-[url('assets/crew/background-crew-mobile.jpg')]">
+            <CrewPage />
           </Layout>
         }
       />

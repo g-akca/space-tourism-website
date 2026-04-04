@@ -7,7 +7,7 @@ function DestinationPage() {
   const destination = data.destinations[selectedIndex];
 
   return (
-    <div className="grow w-full flex flex-col gap-6 text-center desktop:text-start desktop:w-277.5">
+    <div className="grow flex flex-col gap-6 text-center desktop:text-start desktop:w-277.5">
       <div className="flex justify-center tablet:justify-start gap-6 uppercase font-barlow-cond text-[16px] tablet:text-[20px] desktop:text-[28px] leading-auto tracking-[15%] desktop:tracking-[4px] text-white">
         <p className="font-bold opacity-25 desktop:tracking-[4.72px]">01</p>
         <p>Pick your destination</p>
