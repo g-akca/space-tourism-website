@@ -35,7 +35,7 @@ function TechnologyPage() {
                 key={item.name}
                 type="button"
                 onClick={() => setSelectedIndex(index)}
-                className={`h-10 tablet:h-14 desktop:h-20 aspect-square rounded-full ${selectedIndex === index ? "bg-white text-blue-900" : "text-white border border-[rgba(255,255,255,0.25)]"}`}
+                className={`h-10 tablet:h-14 desktop:h-20 aspect-square rounded-full cursor-pointer transition-colors ${selectedIndex === index ? "bg-white text-blue-900" : "text-white border border-white/25 hover:border-white"}`}
               >
                 {index + 1}
               </button>
