@@ -27,7 +27,7 @@ function CrewPage() {
           </div>
         </div>
 
-        <img src={douglasImg} alt="Image of Douglas Hurley" className="h-85" />
+        <img src={douglasImg} alt="Image of Douglas Hurley" className="h-85 mask-[linear-gradient(to_bottom,black_85%,transparent)]" />
       </div>
     </div>
   )
