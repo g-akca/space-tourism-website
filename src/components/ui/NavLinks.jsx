@@ -2,12 +2,12 @@ import { NavLink } from "react-router";
 
 function NavLinks({ direction = "horizontal" }) {
   const navClass = ({ isActive }) =>
-    `flex items-center ${
+    `flex items-center transition-all ${
       direction === "vertical"
         ? "border-r-[3px] h-4.75 gap-3"
         : "border-b-[3px] gap-2"
     } ${
-      isActive ? "border-white" : "border-transparent"
+      isActive ? "border-white" : "border-transparent hover:border-[rgba(255,255,255,0.5)]"
     }`;
 
   const links = [
