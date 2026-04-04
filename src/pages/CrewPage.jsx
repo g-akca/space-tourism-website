@@ -8,20 +8,20 @@ function CrewPage() {
 
   return (
     <div className="grow flex flex-col gap-6 text-center">
-      <div className="flex justify-center gap-6 uppercase font-barlow-cond text-[16px] leading-auto tracking-[15%] text-white">
+      <div className="flex justify-center tablet:justify-start gap-6 uppercase font-barlow-cond text-[16px] tablet:text-[20px] leading-auto tracking-[15%] text-white">
         <p className="font-bold opacity-25">02</p>
         <p>Meet your crew</p>
       </div>
 
-      <div className="flex flex-col items-center gap-8">
-        <div className="pt-10 flex flex-col gap-6">
+      <div className="grow flex flex-col items-center justify-between gap-8">
+        <div className="pt-10 flex flex-col gap-6 tablet:max-w-lg">
           <div className="flex flex-col gap-6">
-            <div className="flex flex-col gap-2 uppercase font-bellefair text-white">
-              <p className="opacity-50 text-[18px]">{crew.role}</p>
-              <p className="text-[24px]">{crew.name}</p>
+            <div className="flex flex-col gap-2 tablet:gap-4 uppercase font-bellefair text-white">
+              <p className="opacity-50 text-[18px] tablet:text-[24px] leading-auto">{crew.role}</p>
+              <p className="text-[24px] tablet:text-[40px] leading-auto">{crew.name}</p>
             </div>
 
-            <p className="h-41">{crew.bio}</p>
+            <p className="h-41 tablet:h-29.5">{crew.bio}</p>
           </div>
 
           <div className="flex justify-center gap-4">
@@ -36,7 +36,9 @@ function CrewPage() {
           </div>
         </div>
 
-        <img src={crew.images.png} alt={`Image of ${crew.name}`} className="h-85 mask-[linear-gradient(to_bottom,black_85%,transparent)]" />
+        <div className="relative h-85 tablet:h-120 w-full flex justify-center">
+          <img src={crew.images.png} alt={`Image of ${crew.name}`} className="tablet:h-140 tablet:absolute tablet:top-0 mask-[linear-gradient(to_bottom,black_85%,transparent)]" />
+        </div>
       </div>
     </div>
   )
