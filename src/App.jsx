@@ -19,7 +19,7 @@ function App() {
       <Route
         path="/destination"
         element={
-          <Layout bg="bg-[url('assets/destination/background-destination-mobile.jpg')] tablet:bg-[url('assets/destination/background-destination-tablet.jpg')]">
+          <Layout bg="bg-[url('assets/destination/background-destination-mobile.jpg')] tablet:bg-[url('assets/destination/background-destination-tablet.jpg')] desktop:bg-[url('assets/destination/background-destination-desktop.jpg')]">
             <DestinationPage />
           </Layout>
         }
