@@ -30,7 +30,7 @@ function CrewPage() {
                 key={item.name}
                 type="button"
                 onClick={() => setSelectedIndex(index)}
-                className={`h-2.5 desktop:h-3.75 bg-white aspect-square rounded-full ${selectedIndex === index ? "" : "opacity-20"}`}
+                className={`h-2.5 desktop:h-3.75 bg-white aspect-square rounded-full cursor-pointer transition-all ${selectedIndex === index ? "" : "opacity-20 hover:opacity-50"}`}
               />
             ))}
           </div>
