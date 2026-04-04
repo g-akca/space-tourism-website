@@ -29,7 +29,7 @@ function App() {
       <Route
         path="/crew"
         element={
-          <Layout bg="bg-[url('assets/crew/background-crew-mobile.jpg')] tablet:bg-[url('assets/crew/background-crew-tablet.jpg')]">
+          <Layout bg="bg-[url('assets/crew/background-crew-mobile.jpg')] tablet:bg-[url('assets/crew/background-crew-tablet.jpg')] desktop:bg-[url('assets/crew/background-crew-desktop.jpg')]">
             <CrewPage />
           </Layout>
         }
