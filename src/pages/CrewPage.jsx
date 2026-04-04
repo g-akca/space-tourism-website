@@ -14,8 +14,8 @@ function CrewPage() {
       </div>
 
       <div className="grow flex flex-col desktop:grid desktop:grid-cols-2 items-center justify-between gap-8">
-        <div className="pt-10 flex flex-col gap-6 desktop:gap-10 tablet:max-w-lg desktop:max-w-none desktop:pt-0">
-          <div className="flex flex-col gap-6 desktop:h-157.75 desktop:justify-center">
+        <div className="pt-10 flex flex-col gap-6 desktop:gap-10 tablet:max-w-lg desktop:max-w-none desktop:h-full desktop:pt-0">
+          <div className="flex flex-col gap-6 desktop:grow desktop:justify-center">
             <div className="flex flex-col gap-2 tablet:gap-4 uppercase font-bellefair text-white">
               <p className="opacity-50 text-[18px] tablet:text-[24px] desktop:text-[32px] leading-auto">{crew.role}</p>
               <h2 className="text-[24px] tablet:text-[40px] desktop:text-[56px] leading-auto">{crew.name}</h2>
@@ -36,8 +36,8 @@ function CrewPage() {
           </div>
         </div>
 
-        <div className="relative h-85 tablet:h-120 desktop:h-auto w-full flex justify-center">
-          <img src={crew.images.png} alt={`Image of ${crew.name}`} className="tablet:h-140 tablet:absolute tablet:top-0 mask-[linear-gradient(to_bottom,black_85%,transparent)] desktop:static desktop:h-auto" />
+        <div className="relative h-85 tablet:h-120 desktop:h-auto w-full flex justify-center desktop:self-start">
+          <img src={crew.images.png} alt={`Image of ${crew.name}`} className="tablet:h-140 tablet:absolute tablet:top-0 mask-[linear-gradient(to_bottom,black_85%,transparent)] desktop:static desktop:h-150" />
         </div>
       </div>
     </div>
