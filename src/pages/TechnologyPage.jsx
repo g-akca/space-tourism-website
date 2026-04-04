@@ -21,7 +21,7 @@ function TechnologyPage() {
       </div>
 
       <div className="grow flex flex-col gap-8 desktop:flex-row desktop:items-center desktop:justify-between">
-        <div className="h-80.5 tablet:h-105.25 desktop:h-auto pt-16 desktop:p-0 desktop:w-152 desktop:absolute desktop:right-0 desktop:top-1/2 desktop:-translate-y-11/30">
+        <div className="h-80.5 tablet:h-105.25 desktop:h-auto pt-16 desktop:p-0 desktop:w-130 desktop:absolute desktop:right-0 desktop:top-1/2 desktop:-translate-y-9/30">
           <picture>
             <source
               media="(min-width: 1440px)"
@@ -30,7 +30,7 @@ function TechnologyPage() {
             <img
               src={tech.images.landscape}
               alt={tech.name}
-              className="absolute w-screen h-64.5 tablet:h-89.25 left-1/2 -translate-x-1/2 object-cover desktop:h-150 desktop:static desktop:translate-x-0"
+              className="absolute w-screen h-64.5 tablet:h-89.25 left-1/2 -translate-x-1/2 object-cover desktop:h-120 desktop:static desktop:translate-x-0"
             />
           </picture>
         </div>
