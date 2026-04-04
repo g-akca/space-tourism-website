@@ -1,8 +1,16 @@
 import ExploreButton from "../components/ui/ExploreButton";
 
+import { motion } from "framer-motion";
+
 function HomePage() {
   return (
-    <div className="grow flex flex-col tablet:py-22 desktop:py-20 desktop:justify-end">
+    <motion.div
+      className="grow flex flex-col tablet:py-22 desktop:py-20 desktop:justify-end"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.4 }}
+    >
       <div className="text-center grow flex flex-col items-center desktop:w-277.5 desktop:text-start desktop:grow-0 desktop:grid desktop:grid-cols-2 desktop:gap-7.5">
         <div className="flex flex-col gap-6 tablet:w-lg desktop:w-auto">
           <p className="font-barlow-cond uppercase text-[16px] tablet:text-[28px] leading-auto tracking-[15%] tablet:tracking-[4px]">So, you want to travel to</p>
@@ -14,7 +22,7 @@ function HomePage() {
           <ExploreButton />
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

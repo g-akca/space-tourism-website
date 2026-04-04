@@ -1,13 +1,20 @@
 import data from "../data/data.json";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 function TechnologyPage() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const tech = data.technology[selectedIndex];
 
   return (
-    <div className="grow flex flex-col gap-6 desktop:w-277.5">
+    <motion.div 
+      className="grow flex flex-col gap-6 desktop:w-277.5"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.4 }}
+    >
       <div className="flex justify-center tablet:justify-start gap-6 uppercase font-barlow-cond text-[16px] tablet:text-[20px] desktop:text-[28px] leading-auto tracking-[15%] desktop:tracking-[4px] text-white">
         <p className="font-bold opacity-25 desktop:tracking-[4.72px]">03</p>
         <p>Space Launch 101</p>
@@ -52,7 +59,7 @@ function TechnologyPage() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

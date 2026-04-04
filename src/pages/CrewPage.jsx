@@ -1,13 +1,20 @@
 import data from "../data/data.json";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 function CrewPage() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const crew = data.crew[selectedIndex];
 
   return (
-    <div className="grow flex flex-col gap-6 text-center desktop:text-start desktop:w-277.5">
+    <motion.div 
+      className="grow flex flex-col gap-6 text-center desktop:text-start desktop:w-277.5"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.4 }}
+    >
       <div className="flex justify-center tablet:justify-start gap-6 uppercase font-barlow-cond text-[16px] tablet:text-[20px] desktop:text-[28px] leading-auto tracking-[15%] desktop:tracking-[4px] text-white">
         <p className="font-bold opacity-25 desktop:tracking-[4.72px]">02</p>
         <p>Meet your crew</p>
@@ -40,7 +47,7 @@ function CrewPage() {
           <img src={crew.images.png} alt={`Image of ${crew.name}`} className="tablet:h-140 tablet:absolute tablet:top-0 mask-[linear-gradient(to_bottom,black_85%,transparent)] desktop:static desktop:h-150" />
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
