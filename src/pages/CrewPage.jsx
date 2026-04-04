@@ -18,7 +18,7 @@ function CrewPage() {
           <div className="flex flex-col gap-6 desktop:h-157.75 desktop:justify-center">
             <div className="flex flex-col gap-2 tablet:gap-4 uppercase font-bellefair text-white">
               <p className="opacity-50 text-[18px] tablet:text-[24px] desktop:text-[32px] leading-auto">{crew.role}</p>
-              <p className="text-[24px] tablet:text-[40px] desktop:text-[56px] leading-auto">{crew.name}</p>
+              <h2 className="text-[24px] tablet:text-[40px] desktop:text-[56px] leading-auto">{crew.name}</h2>
             </div>
 
             <p className="h-41 tablet:h-29.5 desktop:h-auto">{crew.bio}</p>
