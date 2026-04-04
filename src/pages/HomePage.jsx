@@ -1,4 +1,4 @@
-import CircularButton from "../components/ui/CircularButton";
+import ExploreButton from "../components/ui/ExploreButton";
 
 function HomePage() {
   return (
@@ -11,9 +11,7 @@ function HomePage() {
         </div>
 
         <div className="grow flex justify-center items-center py-8 desktop:justify-self-end">
-          <CircularButton className="w-36 tablet:w-68 aspect-square">
-            Explore
-          </CircularButton>
+          <ExploreButton />
         </div>
       </div>
     </div>
