@@ -5,7 +5,7 @@ function Layout({ children, bg = "" }) {
     <div className={`min-h-screen ${bg} bg-cover bg-bottom text-base tablet:text-[16px] desktop:text-[18px] leading-base text-blue-300 flex flex-col`}>
       <Header />
 
-      <main className="p-6 tablet:p-10 desktop:p-12 grow flex flex-col desktop:items-center overflow-hidden">
+      <main className="p-6 tablet:p-10 desktop:p-12 desktop:px-0 grow flex flex-col desktop:items-center overflow-hidden">
         {children}
       </main>
     </div>
