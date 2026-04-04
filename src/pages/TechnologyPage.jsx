@@ -8,8 +8,10 @@ function TechnologyPage() {
         <p>Space Launch 101</p>
       </div>
 
-      <div className="flex flex-col gap-8 pt-16">
-        <img src={launchImg} alt="Launch vehicle" className="absolute w-screen h-64.5 left-1/2 -translate-x-1/2 object-cover" />
+      <div className="flex flex-col gap-8">
+        <div className="h-80.5 pt-16">
+          <img src={launchImg} alt="Launch vehicle" className="absolute w-screen h-64.5 left-1/2 -translate-x-1/2 object-cover" />
+        </div>
         
         <div className="flex flex-col gap-10">
           <div>
@@ -18,9 +20,11 @@ function TechnologyPage() {
 
           <div className="flex flex-col gap-4">
             <div>
-              <p></p>
-              <h2></h2>
+              <p>The terminology...</p>
+              <h2>Launch Vehicle</h2>
             </div>
+
+            <p>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
           </div>
         </div>
       </div>
