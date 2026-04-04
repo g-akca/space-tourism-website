@@ -14,7 +14,7 @@ function App() {
         <Route
           path="/"
           element={
-            <Layout bg="bg-[url('assets/home/background-home-mobile.jpg')] tablet:bg-[url('assets/home/background-home-tablet.jpg')] desktop:bg-[url('assets/home/background-home-desktop.jpg')]">
+            <Layout bg="bg-[url('/assets/home/background-home-mobile.jpg')] tablet:bg-[url('/assets/home/background-home-tablet.jpg')] desktop:bg-[url('/assets/home/background-home-desktop.jpg')]">
               <HomePage />
             </Layout>
           }
@@ -23,7 +23,7 @@ function App() {
         <Route
           path="/destination"
           element={
-            <Layout bg="bg-[url('assets/destination/background-destination-mobile.jpg')] tablet:bg-[url('assets/destination/background-destination-tablet.jpg')] desktop:bg-[url('assets/destination/background-destination-desktop.jpg')]">
+            <Layout bg="bg-[url('/assets/destination/background-destination-mobile.jpg')] tablet:bg-[url('/assets/destination/background-destination-tablet.jpg')] desktop:bg-[url('/assets/destination/background-destination-desktop.jpg')]">
               <DestinationPage />
             </Layout>
           }
@@ -32,7 +32,7 @@ function App() {
         <Route
           path="/crew"
           element={
-            <Layout bg="bg-[url('assets/crew/background-crew-mobile.jpg')] tablet:bg-[url('assets/crew/background-crew-tablet.jpg')] desktop:bg-[url('assets/crew/background-crew-desktop.jpg')]">
+            <Layout bg="bg-[url('/assets/crew/background-crew-mobile.jpg')] tablet:bg-[url('/assets/crew/background-crew-tablet.jpg')] desktop:bg-[url('/assets/crew/background-crew-desktop.jpg')]">
               <CrewPage />
             </Layout>
           }
@@ -41,7 +41,7 @@ function App() {
         <Route
           path="/technology"
           element={
-            <Layout bg="bg-[url('assets/technology/background-technology-mobile.jpg')] tablet:bg-[url('assets/technology/background-technology-tablet.jpg')] desktop:bg-[url('assets/technology/background-technology-desktop.jpg')]">
+            <Layout bg="bg-[url('/assets/technology/background-technology-mobile.jpg')] tablet:bg-[url('/assets/technology/background-technology-tablet.jpg')] desktop:bg-[url('/assets/technology/background-technology-desktop.jpg')]">
               <TechnologyPage />
             </Layout>
           }
