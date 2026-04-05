@@ -44,6 +44,7 @@ Users should be able to:
 - Dynamic JavaScript
 - [Tailwind CSS](https://tailwindcss.com/) - CSS framework
 - [React](https://reactjs.org/) - JS library
+- [React Router](https://reactrouter.com/) - React library
 - [Framer Motion](https://motion.dev/) - Animation library
 
 ## Author
