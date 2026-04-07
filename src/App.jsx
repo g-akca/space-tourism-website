@@ -4,7 +4,7 @@ import DestinationPage from "./pages/DestinationPage";
 import CrewPage from "./pages/CrewPage";
 import TechnologyPage from "./pages/TechnologyPage";
 
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router";
 import { AnimatePresence } from "framer-motion";
 
 function App() {
